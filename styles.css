@@ -1,8 +1,5 @@
-.article {
-    border: 1px solid black;
-    color: goldrenrod;
-}
-
+.article,
 #intro {
-    
+    border: 1px solid black;
+    color: goldenrod;
 }
