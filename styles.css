@@ -1,9 +1,7 @@
 .article,
 #intro {
-    border: 1px solid #ffdead;
-    color: goldenrod;
+    border: 5px solid navy;
+    color: yellow;
+    background: black;
 }
 
-#intro {
-    font-size: 3em;
-}
