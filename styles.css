@@ -1,7 +1,18 @@
-.article,
-#intro {
-    border: 5px solid navy;
+.article {
+    border: .1em solid navy;
     color: yellow;
     background: black;
 }
 
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+    font-family: "Times New Roman", Georgia, Serif;  
+}
