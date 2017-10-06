@@ -9,20 +9,20 @@ header {
     height: 2em;
     }
 
-.navbar,
-ul {
-    list-style-type: none;
-}
+    .navbar {
+        list-style-type: none;
+        margin: .5em 5%;
+    }
 
-.navbar,
 li {
     background-color: darkcyan;
     text-align: center;
     display: inline;
-    margin-right: .75em;
+    margin-right: 5%;
+
 }
 
-.navbar,
+
 a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: .75em;
