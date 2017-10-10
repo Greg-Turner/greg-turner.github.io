@@ -1,0 +1,31 @@
+header {
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: navy;
+    color: white;
+    height: 30px;
+    }
+
+ul.navbar {
+        list-style-type: none;
+        margin: .5em 10%;
+    }
+
+li.navbutton {
+    background-color: darkcyan;
+    text-align: center;
+    display: inline;
+    margin-right: 5%;
+
+}
+
+.hlink {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .75em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: .75em;
+}

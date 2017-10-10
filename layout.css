@@ -1,0 +1,19 @@
+body {
+    background: darkcyan;
+}
+
+ul.noStyle {
+    list-style-type: none;
+}
+
+.article {
+    border: .1rem solid navy;
+    margin: 0px 50px;
+    padding: 1em;
+    color: yellow;
+    }
+
+div.label {
+    font-weight: bold;
+    font-size: 1.5em;
+}
