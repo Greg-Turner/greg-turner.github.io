@@ -4,6 +4,8 @@
         <link href="header.css" rel="stylesheet">
         <link href="layout.css" rel="stylesheet">
         <link href="home.css" rel="stylesheet">
+        <link href="blog.css" rel="stylesheet">
+
     </head>
 
         <body>
@@ -30,15 +32,17 @@
                 </ul>                   
             </section>  
 
-            <!-- I would like an index by month/week that have hyperlinks that
-            when clicked will reveal the appropriate article previously hidden -->
             <article id="week1" class="article">
                 <div class="label">
                     Week 1: The joy of swimming when the floodgates open...
-                    <img src="\images\diver-1723685_640.png" alt="swimmer" height="150" width="150">
+
+                    <!-- button after the label of the entry will reveal the paragraph and
+                    hide it again if pressed a second time-->
+                    <button onclick="readBlog('week1Blog')">Read entry</button>
+                    <!--<img src="\images\diver-1723685_640.png" alt="swimmer" height="150" width="150">-->
                 </div>
                 
-                <p>
+                <p id="week1Blog">
                     When I entered the first week of intense software development training 
                     at Nashville Software School, I fully expected to be thrown into the 
                     proverbial deep end. Hell, I joyfully donned my swimming trunks of Treehouse 
@@ -62,6 +66,28 @@
                     submerged by new tickets augmenting my already sizable queue. I have a feeling the 
                     floodgates in the dam holding back the workload will remain open for the next six months.<br><br>
                     Who needs rest and relaxation on the weekend? Bring on the tickets!
+
+                </p>
+                <!-- I want a comment field that users can type comments about the blog which are then added to the html -->
+
+              
+            </article>
+
+            <article id="week2" class="article">
+                <div class="label">
+                    Week 2: Modularity fixes everything...
+                    
+                    <!-- button after the label of the entry will reveal the paragraph and
+                    hide it again if pressed a second time-->
+                    <button onclick="readBlog('week2Blog')">Read entry</button>
+                    <!--<img src="\images\diver-1723685_640.png" alt="swimmer" height="150" width="150">-->
+                </div>
+                
+                <p id="week2Blog">
+                    I'm not sure why we didn't use the modular approach to everything right from the start.
+                    Once introduced to this concept, I happily divided the rapidly growing CSS file into 
+                    easily understood and even easier managed files. Now, I'm chomping at the bit to do the 
+                    same to JavaScript files!
 
                 </p>
 
