@@ -1,9 +1,8 @@
 <html>
     <head>
         <title>Greg Turner's Blog</title>
-        <link href="header.css" rel="stylesheet">
-        <link href="layout.css" rel="stylesheet">
-        <link href="home.css" rel="stylesheet">
+        <link href="../header.css" rel="stylesheet">
+        <link href="../layout.css" rel="stylesheet">
         <link href="blog.css" rel="stylesheet">
 
     </head>
@@ -11,18 +10,18 @@
         <body>
             <header>
                 <ul class="navbar">
-                    <li class="navbutton"><a class="hlink" href="index.html">Home</a></li>
+                    <li class="navbutton"><a class="hlink" href="../index.html">Home</a></li>
                     <li class="navbutton"><a class="hlink" href="blog.html">Blog</a></li>
-                    <li class="navbutton"><a class="hlink" href="projects.html">Projects</a></li>
-                    <li class="navbutton"><a class="hlink" href="resume.html">Resume</a></li>
-                    <li class="navbutton"><a class="hlink" href="contact.html">Contact</a></li>
+                    <li class="navbutton"><a class="hlink" href="../projects/projects.html">Projects</a></li>
+                    <li class="navbutton"><a class="hlink" href="../resume/resume.html">Resume</a></li>
+                    <li class="navbutton"><a class="hlink" href="../contacts/contact.html">Contact</a></li>
                 </ul> 
 
             </header>
 
             <section id="intro">
                 
-                <img class="me" src="/images/face.jpg" alt="headshot" height="125">
+                <img class="me" src="../images/face.jpg" alt="headshot" height="125">
                
                 <ul class="noStyle">
                     
@@ -32,17 +31,17 @@
                 </ul>                   
             </section>  
 
-            <article id="week1" class="article">
-                <div class="label">
+            <article class="week" class="article">
+                <!--<div class="label">
                     Week 1: The joy of swimming when the floodgates open...
 
-                    <!-- button after the label of the entry will reveal the paragraph and
-                    hide it again if pressed a second time-->
+                    button after the label of the entry will reveal the paragraph and
+                    hide it again if pressed a second time
                     <button onclick="readBlog('week1Blog')">Read entry</button>
-                    <!--<img src="\images\diver-1723685_640.png" alt="swimmer" height="150" width="150">-->
+                    <img src="\images\diver-1723685_640.png" alt="swimmer" height="150" width="150">
                 </div>
                 
-                <p id="week1Blog">
+                <p id="weekBlog1">
                     When I entered the first week of intense software development training 
                     at Nashville Software School, I fully expected to be thrown into the 
                     proverbial deep end. Hell, I joyfully donned my swimming trunks of Treehouse 
@@ -66,21 +65,21 @@
                     submerged by new tickets augmenting my already sizable queue. I have a feeling the 
                     floodgates in the dam holding back the workload will remain open for the next six months.<br><br>
                     Who needs rest and relaxation on the weekend? Bring on the tickets!
-
-                </p>
+                    
+                </p>-->
                 <!-- I want a comment field that users can type comments about the blog which are then added to the html -->
 
               
-            </article>
+            <!--</article>
 
-            <article id="week2" class="article">
+            <article class="week" class="article">
                 <div class="label">
                     Week 2: Modularity fixes everything...
                     
-                    <!-- button after the label of the entry will reveal the paragraph and
-                    hide it again if pressed a second time-->
+                    button after the label of the entry will reveal the paragraph and
+                    hide it again if pressed a second time
                     <button onclick="readBlog('week2Blog')">Read entry</button>
-                    <!--<img src="\images\diver-1723685_640.png" alt="swimmer" height="150" width="150">-->
+                    <img src="\images\diver-1723685_640.png" alt="swimmer" height="150" width="150">
                 </div>
                 
                 <p id="week2Blog">
@@ -88,13 +87,16 @@
                     Once introduced to this concept, I happily divided the rapidly growing CSS file into 
                     easily understood and even easier managed files. Now, I'm chomping at the bit to do the 
                     same to JavaScript files!
-
-                </p>
+                    
+                </p>-->
 
               
                 <!-- I want a comment field that users can type comments about the blog which are then added to the html -->
             </article>
-            <script src="blog.js"></script>
+            <script src="blog-factory.js"></script>
+            <script src="blog-controller.js"></script>
+            <script src="blogbutton.js"></script>
+
         </body>
     
 </html>

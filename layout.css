@@ -1,19 +1,64 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: darkcyan;
 }
+
+#intro {
+    padding-top: 3em;
+    }
+
+p {
+    color: yellow;
+    font-family: Verdana;
+}
+
+p.myself1 {
+    font-family: Verdana;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 1px 25% 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;    
+    }
+
+p.myself2 {
+    margin: 1px 25% 1px;
+    font-size: 1.5em;
+    padding-top: 2px;
+    padding-bottom: 2px;    
+    }
+
+p.myself6 {
+    margin: 1px 25% 1px;
+    font-size: .9em;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+img.me {
+    float: left;
+    margin-left: 2.5%;
+    border-radius: 50%;
+    border: 5px solid navy;
+    }
 
 ul.noStyle {
     list-style-type: none;
 }
 
 .article {
-    border: .1rem solid navy;
-    margin: 0px 50px;
-    padding: 1em;
+    border: .1em solid navy;
+    margin: 0px 2.5%;
     color: yellow;
     }
 
 div.label {
+    color: yellow;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1em;
+    font-family: Verdana;
 }
