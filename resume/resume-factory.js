@@ -92,6 +92,17 @@ const ccna = {
     "order": 4
 }
 
+const nss = {
+    "name": "Nashville Software School",
+    "category": "edu",
+    "title": "Full Stack Software Developer: Frontend HTML, CSS & JavaScript Backend .NET & C#",
+    "location": "Nashville, TN",
+    "startDate": "",
+    "endDate": "working towards March 2018 graduation",
+    "comment": "",
+    "order": 1
+}
+
 const itt = {
     "name": "ITT Technical Institute",
     "category": "edu",
@@ -100,7 +111,7 @@ const itt = {
     "startDate": "",
     "endDate": "May 2009",
     "comment": "* GPA 4.0 * Valedictorian * Perfect Attendance *",
-    "order": 1
+    "order": 2
 }
 
 // populate the category arrays with the experience objects
@@ -112,6 +123,7 @@ cert.push(comptiaA)
 cert.push(comptiaN)
 cert.push(mcp)
 cert.push(ccna)
+edu.push(nss)
 edu.push(itt)
 
 // populate resume database with category arrays
