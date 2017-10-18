@@ -10,15 +10,24 @@ const week1 = {
 }
 
 const week2 = {
-    "title": "Modularity fixes everything...",
+    "title": "First group project",
     "weekNo": "2",
     "month": "October 2017",
-    "content": "I'm not sure why we didn't use the modular approach to everything right from the start. Once introduced to this concept, I happily divided the rapidly growing CSS file into easily understood and even easier managed files. Now, I'm chomping at the bit to do the same to JavaScript files!"
+    "content": "This week we were separated into groups and given a group project of creating a company website. I was responsible for creationg a page with methods of contacting the company, such as following various social media pages, direct contact medthods like phone and address, and retailers who sell our merchandice. I also developed the footer to go on all the pages in the site."
 }
+
+const week3 = {
+    "title": "Another group project",
+    "weekNo": "3",
+    "month": "October 2017",
+    "content": "Immediately on the heels of last week's project, we were once again divided into new groups and given a similar company website project. In an effort to challenge ourselves, we embarked on creating a database that is passed between the pages and supplemented with new data... a shopping cart of a sort. Fortunately, a question directed to Steve gave him the opportunity to shoot down our idea as not being part of the scope of what the project owner (himself) wanted from our group. Quite a bit of time and effort was scrapped and we scrambled to regroup. A day before the delivery, Steve surprised us with a twist requirement of paginated products. This resulted in our dropping work on anything but the pagination. This project was delivered having successfully met the requirements but without much polish at all."
+}
+
 
 // populate blog database with enties
 blog.push(week1)
 blog.push(week2)
+blog.push(week3)
 
 // convert blog database into string saved in browser memory
 const blogString = JSON.stringify(blog)
