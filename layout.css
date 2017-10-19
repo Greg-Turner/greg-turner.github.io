@@ -46,7 +46,7 @@ img.me {
     border: 5px solid navy;
     }
 
-ul.noStyle {
+.noStyle {
     list-style-type: none;
 }
 
