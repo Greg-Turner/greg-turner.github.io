@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background: darkcyan;
+    background: rgb(118, 146, 146);
 }
 
 #intro {
@@ -54,11 +54,11 @@ img.me {
     border: .1em solid navy;
     margin: 0px 2.5%;
     color: yellow;
+    padding: 1em;
     }
 
-div.label {
+.label {
     color: yellow;
     font-weight: bold;
-    font-size: 1em;
     font-family: Verdana;
 }
