@@ -4,3 +4,16 @@
 #week2Blog {
     display: none;
 }
+
+.entry {
+    border: 1px solid navy;
+}
+
+li {
+    display: inline;
+    margin: 1em;
+}
+
+a {
+    text-decoration: none;
+}

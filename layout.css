@@ -7,6 +7,10 @@ body {
     background: rgb(118, 146, 146);
 }
 
+article {
+    border: 2px solid navy;
+}
+
 #intro {
     padding-top: 3em;
     }
@@ -14,6 +18,7 @@ body {
 p {
     color: yellow;
     font-family: Verdana;
+    margin-top: 0px;
 }
 
 p.myself1 {
