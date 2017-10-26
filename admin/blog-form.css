@@ -1,0 +1,25 @@
+.step {
+    margin-top: 40px;
+}
+
+#blogEntryForm {
+    display: block;
+    margin: 5% 25%;
+}
+
+#blogEntryForm__submit {
+    margin-top: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.anchorButton {
+    text-decoration: none;
+    margin: 0.5em;
+    text-align: center;
+    border: 1px solid yellow;
+    background: lightblue;
+}

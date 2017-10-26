@@ -5,9 +5,13 @@
 // so the user can view subsequent sets of five articles
 
 // convert blog database string into database object
-const BlogDatabase = JSON.parse(localStorage.getItem("blog"))
+const gTurnerDbase = JSON.parse(localStorage.getItem("gTurnerDbase")) || {}
 
-const totalEntries = BlogDatabase.length
+
+// Create blog key if it doesn't exist
+gTurnerDbase.blogs = gTurnerDbase.blogs || []
+
+const totalEntries = gTurnerDbase.blogs.length
 const entriesPerPage = 5
 const numberOfPages = Math.ceil(totalEntries / entriesPerPage)
 const paginationEl = document.getElementById("entryPaginator")
@@ -82,18 +86,18 @@ function produceBlogEntries (event) {
     }
 
     // Determine which entries to display by slicing the array
-    const entriesToDisplay =  BlogDatabase.slice(
+    const entriesToDisplay =  gTurnerDbase.blogs.slice(
         (pageNumber - 1) * entriesPerPage, 
         pageNumber * entriesPerPage
     )
 
     // Display a <section> representation of each data object
-    for (let i = 0; i < entriesToDisplay.length; i++) {
+    for (let i = (entriesToDisplay.length-1); i >= 0; i--) {
         let currentEntry = entriesToDisplay[i];
         entryEl.innerHTML += `
         <br>
         <article class="week{$i}">
-            <div class="label">${currentEntry.month} Week ${currentEntry.weekNo}: ${currentEntry.title}</div>
+            <div class="label">${currentEntry.month} Week ${currentEntry.entryId}: ${currentEntry.title}</div>
             <br><br>
             <p>${currentEntry.content}</p>
 

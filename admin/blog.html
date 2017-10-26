@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Create Blog Entry</title>
+        <link rel="stylesheet" href="../styles/layout.css">
+        <link rel="stylesheet" href="blog-form.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Create Blog Article</h1>
+        </header>
+
+        <section id="blogEntryForm">
+            <div id="blogEntryForm__body">
+                <label class="step">Blog Entry Title:</label><br>
+                <input type="text" name="blogEntryForm__title"><br>
+
+                <label class="step">Month (type full name of month):</label><br>
+                <input type="text" name="blogEntryForm__month"><br>
+
+                <label class="step">Entry Text:</label>
+                <textarea name="blogEntryForm__content"></textarea>
+            </div>
+
+            <div id="blogEntryForm__submit">
+                <button id="blogEntryForm__submitButton">Save Blog Entry</button>
+            </div>
+        </section>
+
+        <section>
+            <ul>
+                <li><a class="anchorButton" href="../blog/index.html">View Blog Page</a></li>
+            </ul>
+        <script src="blog-form-controller.js"></script>
+    </body>    
+</html>
