@@ -7,10 +7,18 @@
 // convert blog database string into database object
 const gTurnerDbase = JSON.parse(localStorage.getItem("gTurnerDbase")) || {}
 
-
 // Create blog key if it doesn't exist
 gTurnerDbase.blogs = gTurnerDbase.blogs || []
 
+// declaring searchEl as the input field
+const searchEl= document.querySelector("input[name='filter']")
+
+// declare filteredBlogs
+let filteredBlogs = gTurnerDbase.blogs
+
+
+
+// This may need to be contained within a function
 const totalEntries = gTurnerDbase.blogs.length
 const entriesPerPage = 5
 const numberOfPages = Math.ceil(totalEntries / entriesPerPage)
@@ -86,7 +94,7 @@ function produceBlogEntries (event) {
     }
 
     // Determine which entries to display by slicing the array
-    const entriesToDisplay =  gTurnerDbase.blogs.slice(
+    const entriesToDisplay =  filteredBlogs.slice(
         (pageNumber - 1) * entriesPerPage, 
         pageNumber * entriesPerPage
     )
@@ -121,5 +129,26 @@ produceBlogEntries({
     }
 })
 
+// function to filter blogs if there are 3 letters in the input field or the last key pressed was the enter
+function filterMyBlogs() {
+    // if the length of the value of the input field is 3 or the last key hit was enter
+    if (searchEl.length >= 3) {
+        let searchKey = searchEl.value.toLowerCase();
+        filteredBlogs=gTurnerDbase.blogs.filter(
+            blog => {
+                return blog.title.toLowerCase().includes(searchKey) ||
+                blog.content.toLowerCase().includes(searchKey)
+            }) 
+    } else {
+        filteredBlogs=gTurnerDbase.blogs;
+    }
+    produceBlogEntries({
+        "target": {
+            "classList": ["page-1"]
+        }
+    })
+}
+
 previousEl.addEventListener("click", produceBlogEntries)
 nextEl.addEventListener("click", produceBlogEntries)
+searchEl.addEventListener("keyup", filterMyBlogs)
