@@ -16,7 +16,7 @@
         }
     }
 
-    const recentEntryId = gTurnerDbase.blogs[0] || { entryId: 0 }
+    const recentEntryId = gTurnerDbase.blogs[(gTurnerDbase.blogs.length-1)] || { entryId: 0 }
     const newEntryId = entryIdGenerator(recentEntryId.entryId)
 
     // Factory function creating an object of the new Blog entry

@@ -132,7 +132,7 @@ produceBlogEntries({
 // function to filter blogs if there are 3 letters in the input field or the last key pressed was the enter
 function filterMyBlogs() {
     // if the length of the value of the input field is 3 or the last key hit was enter
-    if (searchEl.length >= 3) {
+    if (searchEl.value.length >= 3) {
         let searchKey = searchEl.value.toLowerCase();
         filteredBlogs=gTurnerDbase.blogs.filter(
             blog => {

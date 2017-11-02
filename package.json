@@ -1,0 +1,25 @@
+{
+  "name": "gregturner.github.io",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Greg-Turner/gregturner.github.io.git"
+  },
+  "author": "Greg Turner <greg.turner.it.hero@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Greg-Turner/gregturner.github.io/issues"
+  },
+  "homepage": "https://github.com/Greg-Turner/gregturner.github.io#readme",
+  "devDependencies": {
+    "eslint-grunt": "^1.0.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
