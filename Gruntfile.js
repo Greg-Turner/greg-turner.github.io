@@ -5,11 +5,11 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON("package.json"),
 		watch: {
 			scripts: {
-				files: ["scripts/*.js"],
-				tasks: ["uglify"],
+				files: ["**/scripts/**/*.js", "!node_modules/**/*.js"],
+				tasks: ["eslint", "browserify"],
 				options: {
-					spawn: false
-				}
+					spawn: false,
+				},
 			}
 		},
 		uglify: {
@@ -28,13 +28,19 @@ module.exports = function(grunt) {
 				]
 			}
 		},
+		browserify: {
+			dist: {
+				files: {
+					"build/bundle.js": ["scripts/main.js"],
+				},
+			},
+		},
 		eslint: {
-			all: ["scripts/*.js"],
-			options: {
-				config: "eslintrc.json",
-				rulesDir: "conf/rules"
-			}
-		}
+			src: [
+				"**/scripts/**/*.js",
+				"!node_modules/**/*.js",
+			],
+		},
 	});
     
 	// Load the plugin that provides the tasks.
@@ -47,10 +53,10 @@ module.exports = function(grunt) {
     
 	// Default task(s).
 	grunt.registerTask("default", [
-		"uglify",
-		"watch",
+		"eslint",
 		"browserify",
-		"eslint"
+		"uglify",
+		"watch"
 	]);
             
 };

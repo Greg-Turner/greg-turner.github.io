@@ -50,22 +50,22 @@ function produceBlogEntries (event) {
   // Which number did the user click on?
 
   // Convert DOMTokenList to Array
-  const classes = event.target.classList
-  const classArray = Array.from(classes)
+  // const classes = event.target.classList
+  // const classArray = Array.from(classes)
 
   // Find the class we want that match pattern "page-n"
-  const targetClass = classArray.find(flag => {
-    if (flag.startsWith('page-')) return flag
-  })
+  // const targetClass = classArray.find(flag => {
+  //   if (flag.startsWith('page-')) return flag
+  // })
 
-  // Split the class into an array on the dash
-  const pageNumberArray = targetClass.split('-')
+  // // Split the class into an array on the dash
+  // const pageNumberArray = targetClass.split('-')
 
-  // Get the actual page number ["page", "1"]
-  const actualPageNumber = pageNumberArray[1]
+  // // Get the actual page number ["page", "1"]
+  // const actualPageNumber = pageNumberArray[1]
 
-  // Convert the string into an integer
-  const integerPageNumber = parseInt(actualPageNumber)
+  // // Convert the string into an integer
+  // const integerPageNumber = parseInt(actualPageNumber)
 
   const pageNumber = parseInt(
     Array.from(event.target.classList)

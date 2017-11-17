@@ -43,7 +43,7 @@ const newBlogEntry = function (entryTitle, entryMonth, entryContent) {
 }
 
 // Add event listener (click) to the submit button
-const submitButtonEl = document.getElementById('blogEntryForm__submitButton').addEventListener('click', event => {
+document.getElementById('blogEntryForm__submitButton').addEventListener('click', event => {
   // Create a new Blog entry object
   const newEntry = newBlogEntry(
     document.querySelector("input[name='blogEntryForm__title']").value,

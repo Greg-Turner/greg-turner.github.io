@@ -10,6 +10,7 @@
         },
 
         {
+            "id": 2,
             "service": "FaceBook",
             "identity": "GregTurner.IT.Hero",
             "url": "<a href='https://www.facebook.com/GregTurner.IT.Hero'>facebook.com/GregTurner.IT.Hero</a>",
@@ -17,6 +18,7 @@
         },
 
         {
+            "id": 3,
             "service": "GitHub",
             "identity": "Greg-Turner",
             "url": "<a href='https://github.com/Greg-Turner'>github.com/Greg-Turner</a>",
@@ -24,6 +26,7 @@
         },
 
         {
+            "id": 4,
             "service": "email",
             "identity": "gmail",
             "url": "<a href='mailto:greg.turner.it.hero@gmail.com'>Send Email</a>",
