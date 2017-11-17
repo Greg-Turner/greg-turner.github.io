@@ -41,13 +41,16 @@ module.exports = function(grunt) {
         grunt.loadNpmTasks("grunt-contrib-uglify");
         grunt.loadNpmTasks("grunt-contrib-watch");
         grunt.loadNpmTasks("grunt-browserify");
+        grunt.loadNpmTasks("eslint");
+        
         
     
         // Default task(s).
         grunt.registerTask("default", [
         "uglify",
         "watch",
-        "browserify"
+        "browserify",
+        "eslint"
         ]);
             
     };

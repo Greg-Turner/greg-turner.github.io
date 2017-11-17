@@ -21,7 +21,7 @@ const totalEntries = gTurnerDbase.blogs.length
 const entriesPerPage = 5
 const numberOfPages = Math.ceil(totalEntries / entriesPerPage)
 const paginationEl = document.getElementById('entryPaginator')
-const entryEl = document.getElementsByClassName('week')[0]
+const entryEl = document.getElementsByClassName('entry')[0]
 
 // Build the DOM string for the pagination links in the footer
 let paginationString = "<ul class='noStyle'>"
@@ -91,6 +91,7 @@ function produceBlogEntries (event) {
     nextEl.className = `page-${pageNumber + 1}`
   }
 
+  // THIS IS FLAWED - NEEDS TO REVERSE ENTIRE ARRAY FIRST OR START FROM THE BACK AND MOVE FORWARD
   // Determine which entries to display by slicing the array
   const entriesToDisplay = filteredBlogs.slice(
     (pageNumber - 1) * entriesPerPage,
@@ -100,10 +101,10 @@ function produceBlogEntries (event) {
   // Display a <section> representation of each data object
   for (let i = (entriesToDisplay.length - 1); i >= 0; i--) {
     let currentEntry = entriesToDisplay[i]
-        entryEl.innerHTML += `
+    entryEl.innerHTML += `
         <br>
-        <article class="week{$i}">
-            <div class="label">${currentEntry.month} Week ${currentEntry.entryId}: ${currentEntry.title}</div>
+        <article class="entry{$currentEntry.entryId}">
+            <div class="label">${currentEntry.month} Entry ${currentEntry.entryId}: ${currentEntry.title}</div>
             <br><br>
             <p>${currentEntry.content}</p>
 
@@ -118,7 +119,7 @@ const entryLinks = document.getElementsByClassName('entryPage')
 // Add event listeners to each <a> element in the pagination
 for (let j = 0; j < entryLinks.length; j++) {
   let thisEntryEl = entryLinks[j]
-    thisEntryEl.addEventListener('click', produceBlogEntries, false)
+  thisEntryEl.addEventListener('click', produceBlogEntries, false)
 }
 
 produceBlogEntries({
@@ -132,14 +133,14 @@ function filterMyBlogs () {
   // if the length of the value of the input field is 3 or the last key hit was enter
   if (searchEl.value.length >= 3) {
     let searchKey = searchEl.value.toLowerCase()
-        filteredBlogs = gTurnerDbase.blogs.filter(
+    filteredBlogs = gTurnerDbase.blogs.filter(
       blog => {
         return blog.title.toLowerCase().includes(searchKey) ||
                 blog.content.toLowerCase().includes(searchKey)
       })
   } else {
     filteredBlogs = gTurnerDbase.blogs
-    }
+  }
   produceBlogEntries({
     'target': {
       'classList': ['page-1']

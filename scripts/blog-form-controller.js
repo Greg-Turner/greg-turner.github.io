@@ -16,6 +16,7 @@ const entryIdGenerator = function * (last) {
   }
 }
 
+// pull the entryID property value from the last blog in the blog array within the gTurnerDbase object
 const recentEntryId = gTurnerDbase.blogs[(gTurnerDbase.blogs.length - 1)] || { entryId: 0 }
 const newEntryId = entryIdGenerator(recentEntryId.entryId)
 
