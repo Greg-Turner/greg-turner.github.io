@@ -3,31 +3,31 @@
 
         {
             "id": 1,
-        'service': 'LinkedIn',
-        'identity': 'greg-turner',
-        'url': "<a href='https://www.linkedin.com/in/greg-turner-5007a45'>linkedin.com/in/greg-turner-5007a45</a>",
-        'icon': "<img src='../images/Linkedin.png' alt='linkedin' width=54>"
-        }
+            "service": "LinkedIn",
+            "identity": "greg-turner",
+            "url": "<a href='https://www.linkedin.com/in/greg-turner-5007a45'>linkedin.com/in/greg-turner-5007a45</a>",
+            "icon": "<img src='../images/Linkedin.png' alt='linkedin' width=54>"
+        },
 
         {
-        'service': 'FaceBook',
-        'identity': 'GregTurner.IT.Hero',
-        'url': "<a href='https://www.facebook.com/GregTurner.IT.Hero'>facebook.com/GregTurner.IT.Hero</a>",
-        'icon': "<img src='../images/facebook.png' alt='facebook' width=56>"
-        }
+            "service": "FaceBook",
+            "identity": "GregTurner.IT.Hero",
+            "url": "<a href='https://www.facebook.com/GregTurner.IT.Hero'>facebook.com/GregTurner.IT.Hero</a>",
+            "icon": "<img src='../images/facebook.png' alt='facebook' width=56>"
+        },
 
         {
-        'service': 'GitHub',
-        'identity': 'Greg-Turner',
-        'url': "<a href='https://github.com/Greg-Turner'>github.com/Greg-Turner</a>",
-        'icon': "<img src='../images/Github-icon.png' alt='github' width=54>"
-        }
+            "service": "GitHub",
+            "identity": "Greg-Turner",
+            "url": "<a href='https://github.com/Greg-Turner'>github.com/Greg-Turner</a>",
+            "icon": "<img src='../images/Github-icon.png' alt='github' width=54>"
+        },
 
         {
-        'service': 'email',
-        'identity': 'gmail',
-        'url': "<a href='mailto:greg.turner.it.hero@gmail.com'>Send Email</a>",
-        'icon': "<img src='../images/email.png' alt='email' width=54>"
+            "service": "email",
+            "identity": "gmail",
+            "url": "<a href='mailto:greg.turner.it.hero@gmail.com'>Send Email</a>",
+            "icon": "<img src='../images/email.png' alt='email' width=54>"
         }
     ]
 }
