@@ -1,0 +1,114 @@
+{
+    "experience": [
+
+        {
+            "id": 1,
+            "name": "Teklinks Inc.",
+            "category": "job",
+            "title": "Technical Account Manager",
+            "location": "Franklin, TN",
+            "startDate": "Sept. 2016",
+            "endDate": "Sept. 2017",
+            "comment": ""
+        },
+  
+        {
+            "id": 2,
+            "name": "Dell Inc.",
+            "category": "job",
+            "title": "Account Team Lead/Coach",
+            "location": "Nashville, TN",
+            "startDate": "March 2013",
+            "endDate": "Aug. 2016",
+            "comment": ""
+        },
+  
+        {
+            "ide": 3,
+            "name": "Dell Inc.",
+            "category": "job",
+            "title": "Tier 1 and Tier 2 Agent",
+            "location": "Nashville, TN",
+            "startDate": "Oct. 2010",
+            "endDate": "March 2013",
+            "comment": ""
+        },
+  
+        {
+            "id": 4,
+            "name": "CIO Office Inc.",
+            "category": "job",
+            "title": "Systems Engineer",
+            "location": "Brentwood, TN",
+            "startDate": "Sept. 2009",
+            "endDate": "Feb. 2010",
+            "comment": ""
+        },
+  
+        {
+            "id": 5,
+            "name": "CompTia",
+            "category": "cert",
+            "title": "A+",
+            "location": "",
+            "startDate": "",
+            "endDate": "2007",
+            "comment": ""
+        },
+  
+        {
+            "id": 6,
+            "name": "CompTia",
+            "category": "cert",
+            "title": "Network+",
+            "location": "",
+            "startDate": "",
+            "endDate": "2008",
+            "comment": ""
+        },
+  
+        {
+            "id": 7,
+            "name": "Microsoft",
+            "category": "cert",
+            "title": "Certified Professional (MCP)",
+            "location": "",
+            "startDate": "",
+            "endDate": "2008",
+            "comment": ""
+        },
+  
+        {
+            "id": 8,
+            "name": "Cisco",
+            "category": "cert",
+            "title": "CCNA",
+            "location": "",
+            "startDate": "",
+            "endDate": "2009",
+            "comment": ""
+        },
+  
+        {
+            "id": 9,
+            "name": "Nashville Software School",
+            "category": "edu",
+            "title": "Full Stack Software Developer: Frontend HTML, CSS & JavaScript Backend .NET & C#",
+            "location": "Nashville, TN",
+            "startDate": "",
+            "endDate": "working towards March 2018 graduation",
+            "comment": ""
+        },
+  
+        {
+            "id": 10,
+            "name": "ITT Technical Institute",
+            "category": "edu",
+            "title": "Bachelor of Data Communication System Technology",
+            "location": "Nashville, TN",
+            "startDate": "",
+            "endDate": "May 2009",
+            "comment": "* GPA 4.0 * Valedictorian * Perfect Attendance *"
+        }
+    ]
+}
