@@ -1,0 +1,34 @@
+{
+    "link": [
+        {
+            "id": 1,
+            "name": "aboutLink",
+            "anchor": "<a id='aboutLink' href='#'>Main</a>"
+        },
+        {
+            "id": 2,
+            "name": "blogLink",
+            "anchor": "<a id='blogLink' href='#'>Blog</a>"
+        },
+        {
+            "id": 3,
+            "name": "projectsLink",
+            "anchor": "<a id='projectsLink' href='#'>Projects</a>"
+        },
+        {
+            "id": 4,
+            "name": "resumeLink",
+            "anchor": "<a id='resumeLink' href='#'>Resume</a>"
+        },
+        {
+            "id": 5,
+            "name": "contactLink",
+            "anchor": "<a id='contactLink' href='#'>Contact</a>"
+        },
+        {
+            "id": 6,
+            "name": "adminLink",
+            "anchor": "<a id='adminLink' href='#'>Admin Login</a>"
+        }
+    ]
+}

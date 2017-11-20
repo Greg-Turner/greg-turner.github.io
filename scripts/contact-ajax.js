@@ -1,27 +1,26 @@
 /* eslint-env jquery */
 /* eslint-env es6 */
-// declare a variable to contain the following
 
 $(document).ready(function () {
   const contactEl = $('#contact')
-  let finalHTML = `
-    <h1>Follow me at:</h1>
-    <ul>
-    `
+  let contactHTML = `
+      <h1>Follow me at:</h1>
+      <br>
+      `
   $.ajax({
-    'url': './../contact/contact.json',
+    'url': '../content/contact-content.json',
     'method': 'GET'
 
   }).then(contactData => {
     let contactArray = contactData.contacts
     contactArray.forEach(contact => {
-      finalHTML += `
-              <li class="noStyle">${contact.icon} ${contact.service} ${contact.url}</li>
-              `
+      contactHTML += `
+      <a href="${contact.url}" target="_blank">${contact.icon}</a> ---- 
+      `
     })
-    finalHTML += `
-    </ul>
+    contactHTML += `
+    </br>
     `
+    contactEl.html(contactHTML)
   })
-  contactEl.html(finalHTML)
 })

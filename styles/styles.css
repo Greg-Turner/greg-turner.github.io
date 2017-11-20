@@ -3,19 +3,31 @@ html {
     padding: 0;
 }
 
-body {
+/* body {
     background: rgb(118, 146, 146);
-}
+} */
 
 article {
     border: 2px solid navy;
 }
 
-#intro {
+#about {
     padding-top: 3em;
     }
+    
+.navigate {
+    display: inline-block;
+}
 
-p {
+.noStyle {
+    list-style-type: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* p {
     color: yellow;
     font-family: Verdana;
     margin-top: 0px;
@@ -51,9 +63,7 @@ img.me {
     border: 5px solid navy;
     }
 
-.noStyle {
-    list-style-type: none;
-}
+
 
 .article {
     border: .1em solid navy;
@@ -66,4 +76,4 @@ img.me {
     color: yellow;
     font-weight: bold;
     font-family: Verdana;
-}
+} */

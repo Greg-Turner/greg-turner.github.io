@@ -23,6 +23,9 @@
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "no-debugger": 0
+        ,
+        "no-console":0
     }
 }
