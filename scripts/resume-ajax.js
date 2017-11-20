@@ -9,11 +9,11 @@ $(document).ready(function () {
         <ul>
         `
   $.ajax({
-    'url': '../content/resume-content.json',
+    'url': 'https://personal-site-b59b7.firebaseio.com/experience.json',
     'method': 'GET'
 
   }).then(resumeData => {
-    let experienceArray = resumeData.experience
+    let experienceArray = resumeData
     let experienceCategory = 'job'
     experienceArray.forEach(experience => {
       if (experience.category !== experienceCategory && experience.category === 'cert') {

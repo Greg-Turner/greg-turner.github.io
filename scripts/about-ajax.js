@@ -5,11 +5,11 @@ $(document).ready(function () {
   const aboutEl = $('#about')
   let aboutHTML = ``
   $.ajax({
-    'url': '../content/about-content.json',
+    'url': 'https://personal-site-b59b7.firebaseio.com/about.json',
     'method': 'GET'
 
   }).then(aboutData => {
-    let aboutArray = aboutData.about
+    let aboutArray = aboutData
     aboutArray.forEach(about => {
       aboutHTML += `
             <h1>${about.pic} ${about.name}</h1>

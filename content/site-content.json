@@ -1,0 +1,285 @@
+
+{
+    "about": [
+        {
+            "pic": "<img class='me' src='../images/face.jpg' alt='headshot' height='125'>",
+            "name": "Greg Turner",
+            "background": "    After an extensive career in retail sales management, I became disillusioned with the trend for sales to meet company quotas versus sincerely meeting the needs of the customer. I then altered my career direction to IT support and although I flourished in a tech environment, my previous sales experience resulted in employers’ shoe-horning me into customer-facing positions instead of focusing on my troubleshooting skills. My brief encounters with coding along the way have always been joyful and satisfying, so I’ve decided it is time to take on a career that utilizes skills I have always relished instead of non-intuitive skills I’ve been forced to develop.  Now, with no small sacrifice, I am immersing myself in the accelerated software developer boot camp at Nashville Software School."
+        }
+    ],
+
+    "blog": [
+
+        {
+            "id": 1,
+            "title": "The joy of swimming when the floodgates open...",
+            "month": "October 2017",
+            "content": "When I entered the first week of intense software development training at Nashville Software School, I fully expected to be thrown into the proverbial deep end. Hell, I joyfully donned my swimming trunks of Treehouse pre-work and gracefully dove in. Within the first couple days, in addition to HTML, CSS, and JavaScript basics, I was introduced to the wonders of utilizing Visual Studio Code, GitBash, Git commands, and GitHub. I must confess the idea of logging coding on a timeline log of git branches wins from me a hearty HUZZAH!<br><br> Then the current of coding knowledge flowing from Steve and Meg began to pick up and my swim pace was pushed up a notch. To insure I firmly grasped every new topic, I committed myself to completing every JavaScript practice exercise at the end of each chapter. These were excellent! Just when I thought I was a rock star, or Olympic swimmer if I stay true to my metaphor, Steve introduced us to ticketing in GitHub. My Excel sheet-organized, flow chart-loving, side of me was doing the happy-dance! But wait... seven tickets seemed a little much all at once, don't you think?<br><br> By the end of the week, the JavaScript concepts of arrays and objects, which were familiar to me, had been amped up with the JSON command, allowing me to convert a database of objects into a string, aka. stringify, which can be stored in a browser's memory. Fascinating stuff!<br><br> Nearing the end of the last day of my first week at NSS, I completed the exercise on storing in browser memory. With only a little time remaining in the day, I found myself submerged by new tickets augmenting my already sizable queue. I have a feeling the floodgates in the dam holding back the workload will remain open for the next six months.<br><br> Who needs rest and relaxation on the weekend? Bring on the tickets!"
+        },
+
+        {
+            "id": 2,
+            "title": "First group project",
+            "month": "October 2017",
+            "content": "This week we were separated into groups and given a group project of creating a company website. I was responsible for creationg a page with methods of contacting the company, such as following various social media pages, direct contact medthods like phone and address, and retailers who sell our merchandice. I also developed the footer to go on all the pages in the site."
+        },
+
+        {
+            "id": 3,
+            "title": "Another group project",
+            "month": "October 2017",
+            "content": "Immediately on the heels of last week's project, we were once again divided into new groups and given a similar company website project. In an effort to challenge ourselves, we embarked on creating a database that is passed between the pages and supplemented with new data... a shopping cart of a sort. Fortunately, a question directed to Steve gave him the opportunity to shoot down our idea as not being part of the scope of what the project owner (himself) wanted from our group. Quite a bit of time and effort was scrapped and we scrambled to regroup. A day before the delivery, Steve surprised us with a twist requirement of paginated products. This resulted in our dropping work on anything but the pagination. This project was delivered having successfully met the requirements but without much polish at all."
+        },
+
+        {
+            "id": 4,
+            "title": "Lorem ipsum dolor",
+            "month": "October 2017",
+            "content": "Lorem ipsum dolor sit amet, idque mentitum molestie mea cu, per ne legere utroque instructior. Ad delenit menandri consequuntur his, dicat mucius eu quo. In mea decore adipisci aliquando, no vitae libris eum. Velit causae commune in pro, ad quo stet fuisset similique, in per tollit mediocritatem. Et aperiam tamquam eos, ut nam oportere efficiantur."
+        },
+
+        {
+            "id": 5,
+            "title": "Ne oratio scaevola",
+            "month": "November 2017",
+            "content": "Ne oratio scaevola est, augue aliquid salutatus et eos. Id his adhuc soluta vituperatoribus, id populo regione nominati mea. Vim no enim zril oblique, eum adhuc adversarium an, primis alienum ad duo. Ei suas efficiantur nec, his iisque veritus prodesset id. Quod placerat oportere vim ei, mea et nulla solet nominati, ne mei populo scripta."
+        },
+
+        {
+            "id": 6,
+            "title": "Est te euismod voluptua",
+            "month": "November 2017",
+            "content": "Est te euismod voluptua, te dico regione sed. No pri possit assentior. Adipiscing assueverit quo ea, id est affert adversarium, viris propriae detraxit mel ad. Ius graeci euripidis eu, mei an suscipit lobortis vituperata, pro ex atqui debet."
+        },
+
+        {
+            "id": 7,
+            "title": "Urbanitas definitionem nam te",
+            "month": "November 2017",
+            "content": "Urbanitas definitionem nam te, eam an affert civibus. Id cum mundi mollis feugait, usu ex ornatus phaedrum mnesarchum. Ei elit dissentiunt mea, probo menandri recusabo ad duo, tota euismod vel ne. Unum omnes urbanitas ea pro, erat dictas atomorum ius ea. Eum ad latine voluptua sententiae. Eripuit nominati ius in."
+        },
+
+        {
+            "id": 8,
+            "title": "Tempor essent ei cum",
+            "month": "November 2017",
+            "content": "Tempor essent ei cum, duo falli aliquid in. Id eum nisl viris, qualisque disputando mel an. Per no albucius percipitur. Populo oporteat deseruisse sit eu, ea rebum nonumes torquatos pro, audire postulant accusamus nec et."
+        },
+
+        {
+            "id": 9,
+            "title": "Lorem ipsum dolor sit amet",
+            "month": "December 2017",
+            "content": "Lorem ipsum dolor sit amet, usu ne iudico deserunt sadipscing, duo ea probo argumentum. Nec epicurei probatus cu, antiopam convenire eu per. Modo dolorum an vix. Nam eu sale voluptaria. Vix facer noluisse ponderum no, ius ea voluptatum accommodare. Et illum fabellas dissentias usu, eius expetenda vel id, te option suscipit sea."
+        },
+
+        {
+            "id": 10,
+            "title": "At mea oratio dicunt liberavisse",
+            "month": "December 2017",
+            "content": "At mea oratio dicunt liberavisse. Consul numquam eu eos, ut sed summo delicata. Mel ad sumo maiorum. Agam nonumes te per, ex populo recteque sit, pri in euripidis persequeris. Ut nec soluta nusquam, ne vim error eirmod, paulo ornatus dolorem qui ne. Mea illum atomorum an, te eum decore dicunt officiis, nec quando possit everti te."
+        },
+
+        {
+            "id": 11,
+            "title": "Front End Capstone Due",
+            "month": "January 2018",
+            "content": "Mel ad soleat equidem interpretaris, ex his appareat prodesset. Partem graecis principes est ea, ea quas alterum sit. Ei legere pertinacia repudiandae cum, eos id nulla apeirian, eos magna putent mnesarchum ex. Te accusam praesent consetetur mel."
+        },
+
+        {
+            "id": 12,
+            "title": "Starting Back End Training",
+            "month": "February 2018",
+            "content": "Dicant accumsan intellegebat ex eos. Principes vituperatoribus cu eam, his te ubique detraxit tincidunt. Melius molestie sed eu, sonet hendrerit evertitur quo an. In decore laboramus pri, eu graeci suscipit atomorum vim, homero feugiat qui an. Alia dicunt pri an."
+        }
+    ],
+
+    "contacts": [
+
+        {
+            "id": 1,
+            "service": "LinkedIn",
+            "identity": "greg-turner",
+            "url": "https://www.linkedin.com/in/greg-turner-5007a45'",
+            "icon": "<img src='../images/Linkedin.png' alt='linkedin' width=30>"
+        },
+
+        {
+            "id": 2,
+            "service": "FaceBook",
+            "identity": "GregTurner.IT.Hero",
+            "url": "https://www.facebook.com/GregTurner.IT.Hero'",
+            "icon": "<img src='../images/facebook.png' alt='facebook' width=36>"
+        },
+
+        {
+            "id": 3,
+            "service": "GitHub",
+            "identity": "Greg-Turner",
+            "url": "https://github.com/Greg-Turner",
+            "icon": "<img src='../images/Github-icon.png' alt='github' width=30>"
+        },
+
+        {
+            "id": 4,
+            "service": "Email",
+            "identity": "gmail",
+            "url": "mailto:greg.turner.it.hero@gmail.com",
+            "icon": "<img src='../images/email.png' alt='email' width=30>"
+        }
+    ],
+    
+    "projects": [
+        
+        {
+            "id": 1,
+            "name": "Personal Site",
+            "description": "Developing a personal website to capture projects, provide methods of contact, show experiences, and provide readers access to a personal blog.",
+            "technologies": "Basic HTML and CSS to display and navigate webpages dedicated to Home, Projects, Resume, and Blog. JavaScript Arrays, Objects and JSON to capture data from pages and store it in the browser",
+            "team": "Individual effort",
+            "completeDate": "Actively Working"
+        },
+
+        {
+            "id": 2,
+            "name": "Company Website",
+            "description": "Build a company website in which each page uses JavaScript to load data into a database and then into local storage then uses JavaScript to populate the HTML of the page with the database.",
+            "technologies": "Basic HTML and CSS; factory JavaScript page that loads a stringified database into local storage; controller JavaScript page that parses the local storage into a database then populates the data into the HTML of the page",
+            "team": "Merciful Squids: Alexis, Kimmy, Greg T., John",
+            "completeDate": "10/10/2017"
+        },
+
+        {
+            "id": 3,
+            "name": "Company Website - Part Deux",
+            "description": "Build a company website in which each page uses JavaScript to load data into a database and then into local storage then uses JavaScript to populate the HTML of the page with the database. One day before the due date, Steve added a twist requirement of the 20 products being paginated in groups of 4 by JavaScript.",
+            "technologies": "Basic HTML and CSS; factory JavaScript page that loads a stringified database into local storage; controller JavaScript page that parses the local storage into a database then populates the data into the HTML of the page; JavaScript pagination",
+            "team": "Decisive Rhinos: Krys, Greg T., Garrett, Erin, Greg L.",
+            "completeDate": "10/18/2017"
+        }
+    ],
+
+    "experience": [
+
+        {
+            "id": 1,
+            "name": "Teklinks Inc.",
+            "category": "job",
+            "title": "Technical Account Manager",
+            "location": "Franklin, TN",
+            "startDate": "Sept. 2016",
+            "endDate": "Sept. 2017",
+            "icon": "<img src='../images/teklinks.png' alt='teklinks' width=64>",
+            "comment": ""
+        },
+    
+        {
+            "id": 2,
+            "name": "Dell Inc.",
+            "category": "job",
+            "title": "Account Team Lead/Coach",
+            "location": "Nashville, TN",
+            "startDate": "March 2013",
+            "endDate": "Aug. 2016",
+            "icon": "<img src='../images/Dell_services.svg.png' alt='Dell Services' width=64>",
+            "comment": ""
+        },
+    
+        {
+            "ide": 3,
+            "name": "Dell Inc.",
+            "category": "job",
+            "title": "Tier 1 and Tier 2 Agent",
+            "location": "Nashville, TN",
+            "startDate": "Oct. 2010",
+            "endDate": "March 2013",
+            "icon": "<img src='../images/Dell_services.svg.png' alt='Dell Services' width=64>",
+            "comment": ""
+        },
+    
+        {
+            "id": 4,
+            "name": "CIO Office Inc.",
+            "category": "job",
+            "title": "Systems Engineer",
+            "location": "Brentwood, TN",
+            "startDate": "Sept. 2009",
+            "endDate": "Feb. 2010",
+            "icon": "<img src='../images/CIO Office.gif' alt='CIO Office' width=64>",
+            "comment": ""
+        },
+    
+        {
+            "id": 5,
+            "name": "CompTia",
+            "category": "cert",
+            "title": "A+",
+            "location": "",
+            "startDate": "",
+            "endDate": "2007",
+            "icon": "<img src='../images/ComptiaAplus.gif' alt='ComptiaA+' width=64>",   
+            "comment": ""
+        },
+    
+        {
+            "id": 6,
+            "name": "CompTia",
+            "category": "cert",
+            "title": "Network+",
+            "location": "",
+            "startDate": "",
+            "endDate": "2008",
+            "icon": "<img src='../images/ComptiaNetworkplus.gif' alt='ComptiaNetwork+' width=64>",
+            "comment": ""
+        },
+    
+        {
+            "id": 7,
+            "name": "Microsoft",
+            "category": "cert",
+            "title": "Certified Professional (MCP)",
+            "location": "",
+            "startDate": "",
+            "endDate": "2008",
+            "icon": "<img src='../images/MCP-logo.gif' alt='MCP' width=64>",
+            "comment": ""
+        },
+    
+        {
+            "id": 8,
+            "name": "Cisco",
+            "category": "cert",
+            "title": "CCNA",
+            "location": "",
+            "startDate": "",
+            "endDate": "2009",
+            "icon": "<img src='../images/ccna.gif' alt='CCNA' width=64>",
+            "comment": ""
+        },
+    
+        {
+            "id": 9,
+            "name": "Nashville Software School",
+            "category": "edu",
+            "title": "Cohort 22 member",
+            "location": "Nashville, TN",
+            "startDate": "",
+            "endDate": "working towards March 2018 graduation",
+            "icon": "<img src='../images/nss.png' alt='NSS' width=64>",
+            "comment": "Full Stack Software Developer: Frontend HTML, CSS & JavaScript Backend .NET & C#"
+        },
+    
+        {
+            "id": 10,
+            "name": "ITT Technical Institute",
+            "category": "edu",
+            "title": "Bachelor of Data Communication System Technology",
+            "location": "Nashville, TN",
+            "startDate": "",
+            "endDate": "May 2009",
+            "icon": "<img src='../images/itt.png' alt='ITT' width=64>",
+            "comment": "* GPA 4.0 * Valedictorian * Perfect Attendance *"
+        }
+    ]
+}

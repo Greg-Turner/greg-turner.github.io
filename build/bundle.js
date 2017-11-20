@@ -6,11 +6,11 @@ $(document).ready(function () {
   const aboutEl = $('#about')
   let aboutHTML = ``
   $.ajax({
-    'url': '../content/about-content.json',
+    'url': 'https://personal-site-b59b7.firebaseio.com/about.json',
     'method': 'GET'
 
   }).then(aboutData => {
-    let aboutArray = aboutData.about
+    let aboutArray = aboutData
     aboutArray.forEach(about => {
       aboutHTML += `
             <h1>${about.pic} ${about.name}</h1>
@@ -32,11 +32,11 @@ $(document).ready(function () {
       <br>
       `
   $.ajax({
-    'url': '../content/contact-content.json',
+    'url': 'https://personal-site-b59b7.firebaseio.com/contacts.json',
     'method': 'GET'
 
   }).then(contactData => {
-    let contactArray = contactData.contacts
+    let contactArray = contactData
     contactArray.forEach(contact => {
       contactHTML += `
       <a href="${contact.url}" target="_blank">${contact.icon}</a> ---- 
@@ -52,18 +52,20 @@ $(document).ready(function () {
 },{}],3:[function(require,module,exports){
 
 require('./about-ajax')
-// const adminAjax = require('./admin-ajax')
-// const blogAjax = require('./blog-ajax')
 require('./contact-ajax')
-// const navigationBar = require('./navbar')
-// const paginationAjax = require('./pagination-ajax')
-// const projectsAjax = require('./projects-ajax')
 require('./resume-ajax')
-const navbarRevealSection = require('./navbar-reveal-section')
+const navigationBar = require('./navbar-dom')
+require('./navbar-function')
+navigationBar()
+
+},{"./about-ajax":1,"./contact-ajax":2,"./navbar-dom":4,"./navbar-function":5,"./resume-ajax":6}],4:[function(require,module,exports){
+
+const navbar = require('./navbar-function')
 const navbarEl = document.getElementById('navbar')
 let activeSection = 'about'
 
-navbarEl.innerHTML = `
+const navigationBar = function () {
+  navbarEl.innerHTML = `
     <ul class="navigate">
             <li class="noStyle" class="navButton"><a id='aboutLink' href='#'>Main</a></li>
             <li class="noStyle" class="navButton"><a id='blogLink' href='#'>Blog</a></li>
@@ -72,23 +74,34 @@ navbarEl.innerHTML = `
             <li class="noStyle" class="navButton"><a id='contactLink' href='#'>Contact</a></li>
             <li class="noStyle" class="navButton"><a id='adminLink' href='#'>Admin Login</a></li>
             `
-document.getElementById('aboutLink').addEventListener('click', navbarRevealSection('aboutLink', activeSection))
-document.getElementById('adminLink').addEventListener('click', navbarRevealSection('adminLink', activeSection))
-document.getElementById('blogLink').addEventListener('click', navbarRevealSection('blogLink', activeSection))
-document.getElementById('contactLink').addEventListener('click', navbarRevealSection('contactLink', activeSection))
-document.getElementById('projectsLink').addEventListener('click', navbarRevealSection('projectsLink', activeSection))
-document.getElementById('resumeLink').addEventListener('click', navbarRevealSection('resumeLink', activeSection))
+  navbarEl.addEventListener('click', function (event) {
+    console.log(event)
+    let part = event.target.id
+    let open = part.split('L')[0]
 
-},{"./about-ajax":1,"./contact-ajax":2,"./navbar-reveal-section":4,"./resume-ajax":5}],4:[function(require,module,exports){
-const revealSection = function (item, activeSection) {
-  document.getElementById(activeSection).classList.add('hidden')
-  document.getElementById(item).classList.remove('hidden')
-  activeSection = item
+    navbar.hide(activeSection)
+    navbar.reveal(open)
+    activeSection = open
+  })
 }
+module.exports = navigationBar
 
-module.exports = revealSection
+},{"./navbar-function":5}],5:[function(require,module,exports){
+const navbar = Object.create(null, {
+  'hide': {
+    value: function (sectionToHide) {
+      document.getElementById(sectionToHide).classList.add('hidden')
+    }
+  },
+  'reveal': {
+    value: function (sectionToReveal) {
+      document.getElementById(sectionToReveal).classList.remove('hidden')
+    }
+  }
+})
+module.exports = navbar
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 /* eslint-env jquery */
 /* eslint-env es6 */
 
@@ -100,11 +113,11 @@ $(document).ready(function () {
         <ul>
         `
   $.ajax({
-    'url': '../content/resume-content.json',
+    'url': 'https://personal-site-b59b7.firebaseio.com/experience.json',
     'method': 'GET'
 
   }).then(resumeData => {
-    let experienceArray = resumeData.experience
+    let experienceArray = resumeData
     let experienceCategory = 'job'
     experienceArray.forEach(experience => {
       if (experience.category !== experienceCategory && experience.category === 'cert') {

@@ -8,11 +8,11 @@ $(document).ready(function () {
       <br>
       `
   $.ajax({
-    'url': '../content/contact-content.json',
+    'url': 'https://personal-site-b59b7.firebaseio.com/contacts.json',
     'method': 'GET'
 
   }).then(contactData => {
-    let contactArray = contactData.contacts
+    let contactArray = contactData
     contactArray.forEach(contact => {
       contactHTML += `
       <a href="${contact.url}" target="_blank">${contact.icon}</a> ---- 
